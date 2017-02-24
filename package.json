@@ -1,0 +1,29 @@
+{
+  "name": "satoyama-editor",
+  "version": "0.0.1",
+  "description": "satoyama-editor. simple text editor.",
+  "main": "build.js",
+  "dependencies": {
+    "electron-packager": "^8.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nalulabo/satoyama-editor.git"
+  },
+  "keywords": [
+    "electron",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "nalulabo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nalulabo/satoyama-editor/issues"
+  },
+  "homepage": "https://github.com/nalulabo/satoyama-editor#readme"
+}
