@@ -1,6 +1,6 @@
 {
   "name": "satoyama-editor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "satoyama-editor. simple text editor.",
   "main": "build.js",
   "dependencies": {

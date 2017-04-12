@@ -12,7 +12,7 @@ packager({
     icon: "./satoyama-editor.ico",
     platform: "win32",
     arch: "x64",
-    version: "1.4.3",
+    electronVersion: "1.4.3",
     overwrite: true,
     asar: false,
     "app-version": info["version"],

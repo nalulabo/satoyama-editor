@@ -1,4 +1,4 @@
-(function(){
+$().ready(function(){
     /** ========================
      * definitions
      */
@@ -37,10 +37,13 @@
     var editor = document.getElementById(editorname);
     var backup = localStorage.getItem(editorname);
     if(backup){
-        editor.value = backup;
+        // editor.value = backup;
+        $('#' + editorname).val(backup).trigger('autoresize');
     } else {
-        editor.value = initText;
+        // editor.value = initText;
+        $('#' + editorname).val(initText).trigger('autoresize');
     }
+    
     setInfomation(editor);
 
     /**
@@ -103,13 +106,13 @@
         if(val.length === 0){ return "0 sec"; }
         var h = parseInt(val.length / (60 * 600));
         var m = parseInt(val.length / 600);
-        var s = parseInt((val.length % 600) / 60);
+        var s = parseInt((val.length % 600) / 10);
         var result = h + "h" + m + "m" + s + "s";
         return result;
     }
 
     function clearEditor(ev) {
-        editor.value = "";
+        $('#' + editorname).val("").trigger('autoresize');
         setInfomation(editor);
         editor.focus();
     }
@@ -127,4 +130,4 @@
     function removeMarkForWords(str) {
         return str.trim().replace(/([\t\#\-\*\.\|\:]|\n+|<[^<>]*>)/g, "");
     }
-})();
+});

@@ -13,7 +13,7 @@ app.on('window-all-closed', function(){
 });
 
 app.on('ready', function(){
-    mainWindow = new BrowserWindow({width: 1280, height: 800});
+    mainWindow = new BrowserWindow({width: 1280, height: 800, webPreferences: {nodeIntegration: false}});
     mainWindow.loadURL('file://' + __dirname + '/public/index.html');
 
     mainWindow.on('closed', function(){
